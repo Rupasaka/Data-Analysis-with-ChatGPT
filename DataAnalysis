@@ -1,0 +1,177 @@
+Instructions
+The following outlines your step-by-step instructions to complete this hands-on activity:
+
+Task 1: Data Gathering and Preprocessing Using ChatGPT
+Make use of the example prompts, provided under “Additional Resources”, with ChatGPT to achieve the following:
+
+Load the dataset:
+
+Start by downloading the health insurance dataset from the provided Kaggle link. Once downloaded, load the dataset into your preferred analysis environment, such as Python, R, or Excel.
+
+Example dataset: 
+Health Insurance Dataset on Kaggle
+.
+
+Check for missing values:
+
+Inspect the dataset to identify any missing values. If missing values are detected, consider the appropriate method to handle them, such as:
+
+Imputation, i.e., filling in with an estimated value
+
+Removing affected rows, or
+
+Filling with a specific value based on the data context.
+
+Summarize the data:
+
+Provide a summary of the dataset, including the total number of rows and columns, as well as any missing data.
+
+Additionally, gather basic descriptive statistics (mean, median, and standard deviation, for example) to understand the distribution and characteristics of the data.
+
+Task 2: Exploratory Data Analysis Using ChatGPT
+Make use of the example prompts, provided under “Additional Resources”, with ChatGPT to achieve the following:
+
+Understanding attributes impacting insurance charges:
+
+Objective: To explore the relationships between a member’s insurance charge and the different attributes of that member, such as age, BMI, and number of children, for example.
+
+Instructions:
+
+Generate an analysis to determine how each column in the dataset (for example, age, BMI, sex, or region) might influence the insurance charges.
+
+Determine potential correlations, such as whether a higher BMI might lead to higher insurance charges or if age is a significant factor in determining premiums.
+
+Generate plots or statistical summaries, using ChatGPT to generate insights to visualize these relationships, and confirm any trends or patterns identified.
+
+Analyzing the relationship between smoking status and BMI:
+
+Objective: To investigate whether a person’s BMI can help identify their smoking status and how this potentially relates to insurance charges.
+
+Instructions:
+
+Explore possible interactions between BMI and smoking status (represented by the smoker column), and how this relationship potentially affects insurance premiums.
+
+Create visualizations, such as scatter plots or box plots, to represent the potential relationship between smoking status and BMI.
+
+Try to uncover any significant trends or patterns from your data visualizations and summaries.
+
+Examining the relationship between age and insurance charges:
+
+Objective: To gain a deeper understanding of the impacts of age on insurance charges and how this relationship might influence underwriting decisions.
+
+Instructions:
+
+Conduct a detailed analysis of the connection between age and insurance charges.
+
+Consider whether older individuals generally face higher premiums due to increased health risks, and analyze how different age groups vary in terms of average charges.
+
+Generate descriptive statistics or visualizations with ChatGPT, such as line graphs or bar charts, to showcase the relationship between age and insurance charges, and to highlight any significant patterns or age-related thresholds.
+
+Analysis:
+
+1. Donwloaded dataset from kaggle.com and uploaded into Chatgpt.
+2.Once upload is completed, we need to copy paste the questions provided in the lab and understand the response provided by ChatGPT.
+
+Inspect the dataset to identify any missing values. If missing values are detected, consider the appropriate method to handle them, such as:
+
+Imputation, i.e., filling in with an estimated value
+
+Removing affected rows, or
+
+Filling with a specific value based on the data context.
+ChatGPT said:
+ChatGPT
+The dataset contains 1,338 entries and 7 columns. There are no missing values in any of the columns, so no imputation or removal of rows is necessary. ​​
+
+
+
+
+
+
+You said:
+Provide a summary of the dataset, including the total number of rows and columns, as well as any missing data.
+
+Additionally, gather basic descriptive statistics (mean, median, and standard deviation, for example) to understand the distribution and characteristics of the data.
+ChatGPT said:
+ChatGPT
+Here is a summary of the dataset:
+
+Total Rows: 1,338
+Total Columns: 7
+Missing Data: There are no missing values in any of the columns.
+Descriptive Statistics:
+Age:
+
+Mean: 39.21 years
+Standard Deviation: 14.05 years
+Minimum: 18 years
+Maximum: 64 years
+BMI:
+
+Mean: 30.66
+Standard Deviation: 6.10
+Minimum: 15.96
+Maximum: 53.13
+Children (Number of children covered by insurance):
+
+Mean: 1.09
+Standard Deviation: 1.21
+Minimum: 0
+Maximum: 5
+Charges (Insurance charges):
+
+Mean: $13,270.42
+Standard Deviation: $12,110.01
+Minimum: $1,121.87
+Maximum: $63,770.43 ​​
+
+
+
+
+
+You said:
+To explore the relationships between a member’s insurance charge and the different attributes of that member, such as age, BMI, and number of children, for example.
+
+Instructions:
+
+Generate an analysis to determine how each column in the dataset (for example, age, BMI, sex, or region) might influence the insurance charges.
+
+Determine potential correlations, such as whether a higher BMI might lead to higher insurance charges or if age is a significant factor in determining premiums.
+
+Generate plots or statistical summaries, using ChatGPT to generate insights to visualize these relationships, and confirm any trends or patterns identified.
+ChatGPT said:
+ChatGPT
+
+Here are some insights based on the analysis:
+
+Correlation Findings:
+Age and Insurance Charges: There is a moderate positive correlation (
+0.299
+0.299) between age and insurance charges, suggesting that older individuals tend to have higher insurance costs.
+BMI and Insurance Charges: There is a weak positive correlation (
+0.198
+0.198) between BMI and insurance charges, implying that a higher BMI might contribute to increased charges, but it is not a strong relationship.
+Number of Children and Insurance Charges: The correlation between the number of children and charges is very weak (
+0.068
+0.068), indicating that the number of children doesn't significantly impact the insurance charges.
+Visual Insights:
+Age vs Charges: The scatterplot shows that older individuals generally tend to pay higher insurance charges, but there is variability.
+BMI vs Charges: While there is a trend that higher BMI may lead to higher charges, the relationship is not as strong or consistent.
+Number of Children vs Charges: The boxplot shows a slight increase in median charges as the number of children increases, but the effect is minor.
+This suggests that age has a more pronounced impact on insurance premiums than BMI or the number of children. ​​
+
+
+
+
+
+
+You said:
+To investigate whether a person’s BMI can help identify their smoking status and how this potentially relates to insurance charges.
+
+Instructions:
+
+Explore possible interactions between BMI and smoking status (represented by the smoker column), and how this relationship potentially affects insurance premiums.
+
+Create visualizations, such as scatter plots or box plots, to represent the potential relationship between smoking status and BMI.
+
+Try to uncover any significant trends or patterns from your data visualizations and summaries.
